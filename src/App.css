@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "game-cool";
+  src: url("./fonts/JMH\ Cthulhumbus\ Arcade\ UG.ttf");
+}
+@font-face {
+  font-family: "game-regular";
+  src: url("./fonts/PressStart2P-Regular.ttf");
+}
+:root {
+  --font-body: "game-cool";
+  --theme-color: #45caff;
+}
+html, body {
+  background: black;
+  color:  var(--theme-color); /* #00b800; */
+  margin:0;
+  padding: 0;
+  padding-top: 10px;
+  font-family: var(--font-body);
+  text-align: center;
+}
+
+body {
+  font-weight: 900;
+}
+
+button {
+  font-family:  var(--font-body);
+  font-size: 25px;
+  font-weight: bolder;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  /* background: #a80020; */
+  background: var(--theme-color);
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+h1 {
+  font-size: 30px;
+  text-align:center;
+}
+
+textarea {
+  font-family: var(--font-body);
+  font-size: 25px;
+  font-weight: bolder;
+  border: 3px solid black;
+  width: 90%;
+  margin: 0 auto;
+  outline: none;
+  height: 200px;
+  background: var(--theme-color);
+  padding: 10px;
+}
+
+textarea:disabled {
+  background-color: #a5a2a2;
+}
